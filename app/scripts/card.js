@@ -53,7 +53,7 @@ function renderCardContent() {
 }
 
 
-console.log('e');
+
 
 
 

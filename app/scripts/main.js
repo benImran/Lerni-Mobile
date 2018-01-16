@@ -5,6 +5,8 @@ newCard.init();
 
 var next = document.querySelector('#next');
 
-next.addEventListener('click', newCard.init());
+next.addEventListener('click', function () {
+    newCard.init();
+});
 
 
