@@ -1,0 +1,13 @@
+@include maxWidth($breakPointMobile) {
+  .card {
+  width: calc(100% - 60px);
+  margin: 0 auto;
+    &__img {
+      margin: 0 auto;
+      width: 50%;
+      img  {
+        width: 100%;
+      }
+    }
+  }
+}
