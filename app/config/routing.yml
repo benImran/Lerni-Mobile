@@ -1,0 +1,5 @@
+lerni:
+    resource: "@LerniBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
