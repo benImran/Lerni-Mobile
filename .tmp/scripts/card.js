@@ -35,7 +35,7 @@ function createCard(helper) {
 function renderCardContent(helper) {
 
     var value = $.ajax({
-        url: 'card.json',
+        url: '../card.json',
         async: false
     }).responseJSON;
 
