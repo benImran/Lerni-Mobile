@@ -12,11 +12,26 @@
     </head>
     <body>
     <section>
-        {% for liste in list %}
-            {{ liste.name }}
-        {% endfor %}
+        {#{% for liste in list %}#}
+            {#{{ liste.name }}#}
+        {#{% endfor %}#}
 
+        {#{{ response }}#}
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            url: "/ajax",
+            dataType : 'json',
+            success: function(data){
+                console.log(data);
+            }
+        }).done(function(data) {
+            data = $.parseJSON(data);
+            console.log(data);
+        });
+        {# TODO: Render Data From Json (var => data) To View #}
+    </script>
     </body>
     </html>
 

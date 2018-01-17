@@ -10,4 +10,5 @@ namespace LerniBundle\Repository;
  */
 class CountriesRepository extends \Doctrine\ORM\EntityRepository
 {
+
 }
