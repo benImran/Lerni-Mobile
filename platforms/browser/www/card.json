@@ -1,0 +1,26 @@
+{
+     "cards":
+     [
+         {
+             "fact": "Lalalaalala",
+             "country": "France",
+             "category": "Coutumes"
+
+         },
+         {
+           "fact": "haahtropdrole",
+           "country": "Allemagne",
+           "category": "Histoire"
+         },
+         {
+           "fact": "Héhéé",
+           "country": "Italie",
+           "category": "Histoire"
+         },
+         {
+           "fact": "Hahacdjfjff",
+           "country": "Espagne",
+           "category": "Législation"
+         }
+     ]
+ }

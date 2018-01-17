@@ -19,7 +19,7 @@ App.Helper.prototype.filterCard = function () {
     var filter = document.querySelectorAll('.filter li');
 
     for (i = 0 ; i < filter.length; i++) {
-        if (filter[i].classList.contains("checked")) {
+        if (filter[i].classList.contains('checked')) {
             filterChecked.push(filter[i].getAttribute('data-country'));
         }
     }

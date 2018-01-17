@@ -14,7 +14,7 @@ next.addEventListener('click', function () {
 
 for (i = 0 ; i < filter.length; i++) {
     filter[i].addEventListener('click', function () {
-        this.classList.toggle("checked");
+        this.classList.toggle('checked');
         helper.filterCard();
     });
 }
