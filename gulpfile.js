@@ -55,7 +55,7 @@ gulp.task('lint:test', () => {
 
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('web/*.html')
-    .pipe($.useref({searchPath: ['.tmp', 'front', '.']}))
+    .pipe($.useref({searchPath: ['.tmp', 'web', '.']}))
     .pipe($.if(/\.js$/, $.uglify({compress: {drop_console: true}})))
     .pipe($.if(/\.css$/, $.cssnano({safe: true, autoprefixer: false})))
     .pipe($.if(/\.html$/, $.htmlmin({
@@ -100,7 +100,7 @@ gulp.task('serve', () => {
       notify: false,
       port: 9000,
       server: {
-        baseDir: ['.tmp', 'front'],
+        baseDir: ['.tmp', 'web'],
         routes: {
           '/bower_components': 'bower_components'
         }
@@ -162,7 +162,7 @@ gulp.task('wiredep', () => {
     .pipe(wiredep({
       ignorePath: /^(\.\.\/)*\.\./
     }))
-    .pipe(gulp.dest('front'));
+    .pipe(gulp.dest('web'));
 });
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
