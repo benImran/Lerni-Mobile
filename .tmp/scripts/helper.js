@@ -20,7 +20,7 @@ App.Helper.prototype.filterCard = function () {
 
     for (i = 0; i < filter.length; i++) {
         if (filter[i].classList.contains('checked')) {
-            filterChecked.push(filter[i].getAttribute('data-country'));
+            filterChecked.push(filter[i].getAttribute('data-category'));
         }
     }
 

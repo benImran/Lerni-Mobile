@@ -2,25 +2,40 @@
      "cards":
      [
          {
-             "fact": "Lalalaalala",
-             "country": "France",
-             "category": "Coutumes"
+           "fact": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ornare nisl non dui. Met sodales vitae, sagittis id lectus. Curabitur nec cursus neque, nec congue mi. Phasellus interdum nibh id vehicula sagittis. Mauris lacinia mauris vel nunc finibus, a malesuada ipsum facilisis. Morbi dignissim interdum ex. Vivamus hendrerit dui metus, sed gravida lectus bibendum et. Integer fermentum nibh et tincidunt accumsan. Praesent varius venenatis elit, sed porta dui lacinia et.",
+           "image": "images/example.jpg",
+           "country": "France",
+           "categoryColor": "yellow",
+           "category": "Coutume"
 
          },
          {
-           "fact": "haahtropdrole",
+           "fact": "Vivamus luctus sit amet nisl. Nulla facilisi. Donec et metus vel ipsum commodo ullamcorper accumsan a leo. Nam mi ipsum, sollicitudin nec nisi id, ultricies iaculis diam. Pellentesque non vestibulum nisl, quis iaculis tortor. Nulla vitae sodales quam. Nam est ante, consequat nec molestie a, semper et ex. Duis auctor fermentum gravida. Mauris ultrices magna ut leo tempus, non venenatis eros volutpat. Duis pharetra nisi eu ipsum rhoncus, vehicula ornare nunc ornare.",
+           "image": "images/example.jpg",
            "country": "Allemagne",
+           "categoryColor": "pink",
            "category": "Histoire"
          },
          {
-           "fact": "Héhéé",
+           "fact": "Donec imperdiet arcu id augue mattis semper. Nam sed porta ex. Proin vulputate, nibh sed congue ornare, justo ipsum iaculis nisl, eu mollis lacus turpis sed tellus. Pellentesque imperdiet ligula ut arcu cursus pretium. Morbi eu arcu nec odio facilisis laoreet facilisis at ex. Nam blandit, eros sit amet vestibulum hendrerit, est lorem pellentesque magna, a dignissim magna nisi dignissim ex. Sed aliquet aliquam turpis non ultrices. Fusce ante purus, pretium eu ante quis, laoreet porttitor massa. Nulla metus ligula, blandit et felis vel, aliquam varius leo.",
+           "image": "images/example.jpg",
            "country": "Italie",
-           "category": "Histoire"
+           "categoryColor": "blue",
+           "category": "Gastronomie"
          },
          {
-           "fact": "Hahacdjfjff",
+           "fact": "Aenean tempus ante elit, sit amet viverra ipsum sagittis nec. Sed neque risus, vehicula nec vulputate vel, blandit ac augue. Fusce a ipsum laoreet, laoreet enim et, tristique massa. Nulla mattis ultricies eros, nec sollicitudin urna. Sed elementum ultricies est, at porttitor nisl. Curabitur malesuada, ipsum vitae vulputate molestie, mauris orci pellentesque leo, at hendrerit massa libero eget elit. Cras ultricies ullamcorper luctus. Aliquam congue ultricies pharetra. Nam a ornare lectus. Aliquam erat volutpat. Proin vestibulum libero mi, a pellentesque libero consequat vel.",
+           "image": "images/example.jpg",
+           "country": "Italie",
+           "categoryColor": "blue",
+           "category": "Gastronomie"
+         },
+         {
+           "fact": "In hac habitasse platea dictumst. Vestibulum convallis, elit dapibus sagittis congue, mauris arcu posuere lacus, id fringilla nibh nisl sed justo. Fusce pretium metus vel fringilla aliquet. Duis massa nunc, hendrerit eu aliquet in, mattis ac magna. Nam imperdiet bibendum augue, ac ultrices turpis venenatis sit amet. In non dui at augue imperdiet blandit. Integer dictum varius aliquet. Sed porta congue mauris, nec iaculis ante auctor et. Etiam faucibus pellentesque ex nec dignissim. Morbi dapibus blandit augue eu vulputate. Cras ac metus lectus.",
+           "image": "images/example.jpg",
            "country": "Espagne",
-           "category": "Législation"
+           "categoryColor": "pink",
+           "category": "Histoire"
          }
      ]
  }
