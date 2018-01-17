@@ -3,7 +3,7 @@ var App = App || {};
 var newCard = new App.Card();
 newCard.init();
 
-var next = document.querySelector('#next');
+var next = document.querySelector('.next');
 var filter = document.querySelectorAll('.filter li');
 
 var helper = new App.Helper();

@@ -13,17 +13,33 @@ function createCard(helper) {
     container.innerHTML = '';
 
     var data = renderCardContent(helper);
+
     var dataCountry = data.country;
+    var dataCategory = data.category;
+    var dataCategoryColor = data.categoryColor;
     var dataFact = data.fact;
+    var dataImg = data.image;
 
-
-    renderCountry();
+    renderFigure();
     renderFact();
+    renderCountry();
+    renderCategory();
+
+    container.style.borderBottom = dataCategoryColor + ' solid 5px';
+
+
 
     function renderCountry() {
-        var country = helper.generateUniqueElement('p', 'country');
+        var country = helper.generateUniqueElement('span', 'country');
         country.innerHTML= dataCountry;
         container.appendChild(country);
+    }
+
+    function renderCategory() {
+        var category = helper.generateUniqueElement('span', 'category');
+        category.style.background = dataCategoryColor;
+        category.innerHTML= dataCategory;
+        container.appendChild(category);
     }
 
    function renderFact() {
@@ -31,6 +47,12 @@ function createCard(helper) {
        fact.innerHTML= dataFact;
        container.appendChild(fact);
    }
+
+    function renderFigure() {
+        var img = helper.generateUniqueElement('img', 'card-img');
+        img.setAttribute('src', dataImg);
+        container.appendChild(img);
+    }
 
 }
 
@@ -60,7 +82,7 @@ function filterData(helper, globalData) {
 
         for(i = 0 ; i < filter.length ; i++) {
             for(j = 0 ; j < globalData.length ; j++) {
-                if(filter[i] === globalData[j].country.toLowerCase()) {
+                if(filter[i] === globalData[j].category.toLowerCase()) {
                     data.push(globalData[j]);
                 }
             }
