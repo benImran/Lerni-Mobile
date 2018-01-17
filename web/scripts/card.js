@@ -36,39 +36,41 @@ function createCard(helper) {
 
 function renderCardContent(helper) {
 
-    var value = $.ajax({
+    var jsonData = $.ajax({
         url: 'card.json',
         async: false
     }).responseJSON;
 
-    var values = value.cards;
-    var filter = helper.filterCard();
-    console.log(filter);
+    var dataCards = jsonData.cards;
+    var data = filterData(helper, dataCards);
 
-
-    var data = [];
-
-    if (filter.length !== 0) {
-
-        for(i = 0 ; i < filter.length ; i++) {
-            for(j = 0 ; j < values.length ; j++) {
-                if(filter[i] === values[j].country.toLowerCase()) {
-                    data.push(values[j]);
-                }
-            }
-        }
-
-    } else {
-        data = values;
-    }
-
-    console.log(data[randomCardContent()]);
     return data[randomCardContent()];
 
     function randomCardContent() {
         return Math.floor(Math.random() * data.length);
     }
 
+}
+
+function filterData(helper, globalData) {
+    var filter = helper.filterCard();
+    var data = [];
+
+    if (filter.length !== 0) {
+
+        for(i = 0 ; i < filter.length ; i++) {
+            for(j = 0 ; j < globalData.length ; j++) {
+                if(filter[i] === globalData[j].country.toLowerCase()) {
+                    data.push(globalData[j]);
+                }
+            }
+        }
+
+    } else {
+        data = globalData;
+    }
+
+    return data;
 }
 
 
