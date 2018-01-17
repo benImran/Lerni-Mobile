@@ -1,0 +1,22 @@
+.contain-swip {
+  position: absolute;
+  max-width: 550px;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+
+  .title-help {
+    color:white;
+    position: absolute;
+    bottom: 40px;
+  }
+
+  .slick-dots {
+    bottom: 20px;
+  }
+
+  .slick-list,
+  .slick-track {
+    height: 100%;
+  }
+}

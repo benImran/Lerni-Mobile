@@ -10,3 +10,14 @@ next.addEventListener('click', function () {
 });
 
 
+$(document).ready(function(){
+  $('.contain-swip').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+  });
+});
+
+
