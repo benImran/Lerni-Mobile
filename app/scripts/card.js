@@ -12,7 +12,7 @@ function createCard(helper) {
 
     container.innerHTML = '';
 
-    var data = renderCardContent();
+    var data = renderCardContent(helper);
     var dataCountry = data.country;
     var dataFact = data.fact;
 
@@ -34,17 +34,33 @@ function createCard(helper) {
 
 }
 
-function renderCardContent() {
+function renderCardContent(helper) {
 
     var value = $.ajax({
         url: 'card.json',
         async: false
     }).responseJSON;
 
-    var data = value.cards;
+    var values = value.cards;
+
+
+    var data = [];
+
+    if (filter.length !== 0) {
+
+        for(i = 0 ; i < filter.length ; i++) {
+            for(j = 0 ; j < values.length ; j++) {
+                if(filter[i] === values[j].country.toLowerCase()) {
+                    data.push(values[j]);
+                }
+            }
+        }
+
+    } else {
+        data = values;
+    }
 
     return data[randomCardContent()];
-
 
     function randomCardContent() {
         return Math.floor(Math.random() * data.length);
