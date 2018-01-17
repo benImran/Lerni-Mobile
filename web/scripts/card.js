@@ -42,6 +42,8 @@ function renderCardContent(helper) {
     }).responseJSON;
 
     var values = value.cards;
+    var filter = helper.filterCard();
+    console.log(filter);
 
 
     var data = [];
@@ -60,6 +62,7 @@ function renderCardContent(helper) {
         data = values;
     }
 
+    console.log(data[randomCardContent()]);
     return data[randomCardContent()];
 
     function randomCardContent() {
