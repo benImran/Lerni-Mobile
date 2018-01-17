@@ -9,17 +9,7 @@ var filter = document.querySelectorAll('.filter li');
 var helper = new App.Helper();
 
 next.addEventListener('click', function () {
-  newCard.init();
-});
-
-$(document).ready(function () {
-  $('.contain-swip').slick({
-    infinite: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    dots: true,
-    arrows: false
-  });
+    newCard.init();
 });
 
 for (i = 0; i < filter.length; i++) {
@@ -28,4 +18,14 @@ for (i = 0; i < filter.length; i++) {
         helper.filterCard();
     });
 }
+
+$(document).ready(function () {
+    $('.contain-swip').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+    });
+});
 //# sourceMappingURL=main.js.map
